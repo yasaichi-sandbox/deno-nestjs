@@ -8,10 +8,9 @@
   "scripts": {
     "build": "nest build",
     "format": "deno fmt",
-    "start": "nest start",
-    "start:dev": "nest start --watch",
-    "start:debug": "nest start --debug --watch",
-    "start:prod": "node dist/main",
+    "start": "deno run --allow-env --allow-net --allow-read=./ src/main.ts",
+    "start:dev": "deno run --watch --allow-env --allow-net --allow-read=./ src/main.ts",
+    "start:debug": "deno run --inspect-wait=127.0.0.1:9229 --allow-env --allow-net --allow-read=./ src/main.ts",
     "lint": "deno lint",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -39,7 +38,6 @@
     "supertest": "^6.3.3",
     "ts-jest": "^29.1.0",
     "ts-loader": "^9.4.3",
-    "ts-node": "^10.9.1",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.1.3"
   },
