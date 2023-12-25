@@ -13,6 +13,17 @@
       "runtimeExecutable": "deno",
       "runtimeArgs": ["task"],
       "attachSimplePort": 9229
+    },
+    {
+      "request": "launch",
+      "name": "Debug Test",
+      "type": "node",
+      "program": "test:debug",
+      "args": ["${relativeFile}"],
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "deno",
+      "runtimeArgs": ["task"],
+      "attachSimplePort": 9230
     }
   ]
 }
