@@ -1,0 +1,8 @@
+{
+  "deno.enable": true,
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  }
+}
