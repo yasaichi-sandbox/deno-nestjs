@@ -1,23 +1,8 @@
 {
   "name": "deno-nestjs",
+  "description": "Trial of running NestJS on Deno",
   "version": "0.0.1",
-  "description": "",
   "author": "",
-  "private": true,
-  "license": "UNLICENSED",
-  "scripts": {
-    "build": "nest build",
-    "format": "deno fmt",
-    "start": "deno run --allow-env --allow-net --allow-read=./ src/main.ts",
-    "start:dev": "deno run --watch --allow-env --allow-net --allow-read=./ src/main.ts",
-    "start:debug": "deno run --inspect-wait=127.0.0.1:9229 --allow-env --allow-net --allow-read=./ src/main.ts",
-    "lint": "deno lint",
-    "test": "deno test src/",
-    "test:watch": "deno test --watch src/",
-    "test:cov": "deno test --coverage src/ && deno coverage coverage && deno coverage --lcov --output=coverage/lcov.info coverage",
-    "test:debug": "deno test --inspect-wait=127.0.0.1:9230 --allow-env --allow-net --allow-read=./",
-    "test:e2e": "deno test --allow-env --allow-net --allow-read=./ test/"
-  },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
     "@nestjs/core": "^10.0.0",
@@ -37,5 +22,20 @@
     "ts-loader": "^9.4.3",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.1.3"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "build": "nest build",
+    "format": "deno fmt",
+    "lint": "deno lint",
+    "start": "deno run --allow-env --allow-net --allow-read=./ src/main.ts",
+    "start:debug": "deno run --inspect-wait=127.0.0.1:9229 --allow-env --allow-net --allow-read=./ src/main.ts",
+    "start:dev": "deno run --watch --allow-env --allow-net --allow-read=./ src/main.ts",
+    "test": "deno test src/",
+    "test:cov": "deno test --coverage src/ && deno coverage coverage && deno coverage --lcov --output=coverage/lcov.info coverage",
+    "test:debug": "deno test --inspect-wait=127.0.0.1:9230 --allow-env --allow-net --allow-read=./",
+    "test:e2e": "deno test --allow-env --allow-net --allow-read=./ test/",
+    "test:watch": "deno test --watch src/"
   }
 }
