@@ -1,20 +1,8 @@
 import { INestApplication } from '@nestjs/common';
 import { Test, TestingModule } from '@nestjs/testing';
-import {
-  afterEach,
-  beforeEach,
-  describe,
-  it,
-} from 'https://deno.land/std@0.210.0/testing/bdd.ts';
-import { ClientRequest } from 'node:http';
 import request from 'supertest';
+import { afterEach, beforeEach, describe, it } from 'testing/bdd.ts';
 import { AppModule } from '../src/app.module.ts';
-
-// NOTE: Delete this patch when the following issue is resolved:
-// https://github.com/denoland/deno/issues/18316
-ClientRequest.prototype.setNoDelay = function (noDelay) {
-  this.socket?.setNoDelay?.(noDelay);
-};
 
 describe('AppController (e2e)', () => {
   let app: INestApplication;
