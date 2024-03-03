@@ -41,7 +41,7 @@ $ pnpm run start
 # watch mode
 $ pnpm run start:dev
 
-# production mode (not working for now, use `pnpm run start` instead)
+# production mode
 $ pnpm run build && ./dist/server
 ```
 

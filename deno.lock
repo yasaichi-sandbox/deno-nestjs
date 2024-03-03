@@ -3,5 +3,23 @@
   "remote": {
     "https://deno.land/std@0.211.0/testing/_test_suite.ts": "f10a8a6338b60c403f07a76f3f46bdc9f1e1a820c0a1decddeb2949f7a8a0546",
     "https://deno.land/std@0.211.0/testing/bdd.ts": "3cbd17bd35f629a76ce63446238dfb4632240dd46b3b205027c45fa3dd67e554"
+  },
+  "workspace": {
+    "packageJson": {
+      "dependencies": [
+        "npm:@nestjs/cli@^10.0.0",
+        "npm:@nestjs/common@^10.0.0",
+        "npm:@nestjs/core@^10.0.0",
+        "npm:@nestjs/platform-express@^10.0.0",
+        "npm:@nestjs/schematics@^10.0.0",
+        "npm:@nestjs/testing@^10.0.0",
+        "npm:@types/express@^4.17.17",
+        "npm:@types/node@^20.3.1",
+        "npm:@types/supertest@^2.0.12",
+        "npm:reflect-metadata@^0.1.13",
+        "npm:rxjs@^7.8.1",
+        "npm:supertest@^6.3.3"
+      ]
+    }
   }
 }
